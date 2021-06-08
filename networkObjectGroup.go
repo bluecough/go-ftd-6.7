@@ -172,13 +172,7 @@ func (f *FTD) UpdateNetworkObjectGroup(n *NetworkObjectGroup) error {
 		return err
 	}
 
-	err = json.Unmarshal(data, &n)
-	if err != nil {
-		if f.debug {
-			glog.Errorf("Error: %s\n", err)
-		}
-		return err
-	}
+	json.Unmarshal(data, &n)
 
 	return nil
 }
