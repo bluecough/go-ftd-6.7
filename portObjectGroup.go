@@ -175,13 +175,16 @@ func (f *FTD) UpdatePortObjectGroup(g *PortObjectGroup) error {
 		return err
 	}
 
-	err = json.Unmarshal(data, &g)
+	//err = json.Unmarshal(data, &g)
+	json.Unmarshal(data, &g)
+  /*
 	if err != nil {
 		if f.debug {
 			glog.Errorf("Error: %s\n", err)
 		}
 		return err
 	}
+  */
 
 	return nil
 }
