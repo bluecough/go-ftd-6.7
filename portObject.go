@@ -320,13 +320,7 @@ func (f *FTD) UpdatePortObject(p *PortObject) error {
 		return err
 	}
 
-	err = json.Unmarshal(data, &p)
-	if err != nil {
-		if f.debug {
-			glog.Errorf("Error: %s\n", err)
-		}
-		return err
-	}
+  json.Unmarshal(data, &p)
 
 	return nil
 }
