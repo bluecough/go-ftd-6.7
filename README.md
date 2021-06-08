@@ -1,4 +1,4 @@
-# go-ftd
+# go-ftd for Firepower 6.7
 
 Go Bindings for [Cisco FirePower NGFW](https://www.cisco.com/c/en/us/products/collateral/security/firepower-ngfw/datasheet-c78-736661.html). These bindings talk to Firepower Device Manager.
 ## Added
